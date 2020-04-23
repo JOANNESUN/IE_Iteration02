@@ -1,0 +1,28 @@
+/* #list{
+    height:200px;
+    font-size:14pt;
+} */
+
+body{
+
+    background-color: rgb(164, 240, 243);
+    
+}
+
+h2{
+text-align: center;
+}
+
+
+h3{
+    text-align: center;
+    }
+
+#forms{
+
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
