@@ -1,4 +1,21 @@
 body{
 
     background-color: rgb(164, 240, 243);
+    
+}
+
+img{
+
+    width: 200px;
+    height: 300px;
+}
+
+main{
+
+    margin: 5rem;
+}
+
+h2{
+
+    text-align: center;
 }

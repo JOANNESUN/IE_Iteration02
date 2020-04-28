@@ -5,24 +5,26 @@
 
 body{
 
-    background-color: rgb(164, 240, 243);
+    background-color: rgb(247, 237, 161);
     
 }
 
-h2{
-text-align: center;
+main{
+
+    margin: 5rem;
 }
 
-
-h3{
-    text-align: center;
-    }
-
-#forms{
-
-    text-align: center;
+.card{
+    /* background-color: rgb(238, 214, 152); */
 }
 
-p{
-    text-align: center;
+.botton{
+
+    align-self: flex-start;
+
 }
+
+#outside{
+    text-align:center;
+}
+

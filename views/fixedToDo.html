@@ -37,53 +37,39 @@
             </div>
           </nav>
     </header>
-      <main>
-          <h2 class='display-4'>You can select up to 5 to do list per day</h2>
-<br>
-<br>
-        <!-- <h3>You can select up to 5 to do list per day</h3> -->
-        
-        <form action="/action_page.php">
-          <h3><label for="list">Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</label></h3>
-          <div class="container d-flex h-100 flex-column">
-            <div class="flex-grow-1"></div>
-            <div class="row justify-content-center">
-          <select id="list" name="todoList" size="5" multiple>
-            <option value="breakfast">breakfast</option>
-            <option value="Lunch">Lunch</option>
-            <option value="Dinner">Dinner</option>
-            <option value="Walk">Take a Walk</option>
-            <option value="Dog">Feed Dog</option>
-            <option value="Cat">Feed Cat</option>
-            <option value="Shower">Take A Shower</option>
-            <option value="Medicine">Take Medicine</option>
-            <option value="Walk">Call Dad</option>
-            <option value="Dog">Call Doughter</option>
-            <option value="Cat">Call Mom</option>
-            <option value="Shower">Call Son</option>
-            <option value="Medicine">Call Brother</option>
-            <option value="Medicine">Call Sister</option>
-          </select><br><br></div>
-         
-        </form>
-        </div>
-        </div>
-        </div>
-
-<div class="container d-flex h-100 flex-column">
-    <div class="flex-grow-1">
-    <div class="row justify-content-center">
-        <div class="col-2">
-            <br>
-            <a href="index.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Next</a>
-        </div>
-        </div>
-       
-      <footer></footer>
+    <br>
+    <h2 id="outside">It is important to maintian your dialy routine</h2>
+    <br>
+    <h4 id="outside">Please upload a video to remind yourself or yourlove daily routine</h4>
+      <main>    
       
+        <div class="container">
+          <div class="row">
+            <div class ="col-sm">
+              <div class="card">
+                <div class="card-body">
+            
+                 <h4>Click on the "Choose File" button to upload a video:</h4>
+                 <br>
+                 <h5>video must be less than 2 mins</h5>
+                 <!-- <form action="/action_page.php"> -->
+                  <form action="#">
+                   <input type="file" id="myFile" name="filename">
+                   <input type="submit">
+                   <a href="index.html" type="button" class="btn btn-primary" >Next</button></a>
+                 </form>
+              
+        </div>
+      </div>
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets2.lottiefiles.com/packages/lf20_phbKJx.json"  background="transparent"  speed="1"  style="width: 400px; height: 400px;"  loop  autoplay></lottie-player>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</div>
+      </main>
+      <footer></footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
