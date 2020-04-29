@@ -25,7 +25,7 @@ app.use(express.static(__dirname+'/views'));
 
 // app.get('/', (req, res) => res.send('Hello World!'));
 
-app.get('/login', function(req, res){ res.render('login');});
+app.get('/', function(req, res){ res.render('login');});
 
 app.get('/frontpage', function(req, res){ res.render('frontpage');});
 
@@ -33,7 +33,7 @@ app.get('/registration', function(req, res){ res.render('registration');});
 
 app.get('/fixedToDo', function(req, res){ res.render('fixedToDo');});
 
-app.get('/', function(req, res){ res.render('index');});
+app.get('/home', function(req, res){ res.render('index');});
 
 app.get('/emoji', function(req, res){ res.render('emoji');});
 
