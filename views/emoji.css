@@ -5,8 +5,6 @@ body{
 
 .container{
 
-    
-    margin-right: 0rem;
     padding: 0%;
 }
 
@@ -19,7 +17,8 @@ h4{
 }
 
 img{
-
-    margin: 0rem;
-    padding: 0rem;
+    width: 150px;
+    height: 150px;
+    /* margin: 0rem;
+    padding: 0rem; */
 }

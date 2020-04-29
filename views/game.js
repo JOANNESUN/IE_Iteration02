@@ -4,6 +4,7 @@ const nextButton= document.getElementById('next-btn')
 const questionContainerElements= document.getElementById('question container')
 const questionElement = document.getElementById('question')
 const answerButtonsElment = document.getElementById('answer-buttons')
+var score = 0
 
 // set the question randomly
 
@@ -69,7 +70,14 @@ if(shuffledQuestions.length > currentQuestionIndex +1){
 }else{
     startButton.innerText='restart'
     startButton.classList.remove('hide')
-    
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "/answer", true);
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.send(
+      JSON.stringify({
+        value1: score, // passing value to server with key: value pair
+      })
+    );
 }
 }
 
@@ -78,6 +86,9 @@ function setStatusClass(element, correct){
     clearStatusClass(element)
     if (correct){
         element.classList.add('correct')
+        console.log("correct");
+        score  = score + 1;
+        console.log(score);  
     }
     else{
         element.classList.add('wrong')
@@ -91,21 +102,24 @@ element.classList.remove('wrong')
 }
 
 const questions = [
-    {question: "What do I use to brush teeth?",
+    {QID: "1",
+        question: "What do I use to brush teeth?",
       answers: [
           {text: 'Tooth Brush', correct: true},
           {text: 'Glasses', correct: false},
           {text: 'Hair Brush', correct: false},
           {text: 'tissue', correct: false},]
     },
-    {question: "Apple is a",
+    {QID: "2",
+        question: "Apple is a",
     answers: [
         {text: 'car', correct: false},
         {text: 'fruit', correct: true},
         {text: 'bed', correct: false},
         {text: 'toaster', correct: false},]
     },
-    {question: "Kitchen is where I can",
+    {QID: "3",
+        question: "Kitchen is where I can",
     answers: [
       {text: 'urinate', correct: false},
       {text: 'take a shower', correct: false},
