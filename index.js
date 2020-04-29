@@ -50,6 +50,6 @@ app.post('/answer', function(req, res){
 // Gig routes
 // app.use('/gigs', require('./routes/gigs'));
 
-const PORT = process.env.PORT || 3012
+const PORT = process.env.PORT || 3012 
 
 app.listen(PORT,console.log ("server started on port ${PORT}"));

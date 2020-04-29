@@ -7,6 +7,9 @@ const Game = db.define('game', {
   },
   datetime: {
     type: Sequelize.STRING
+  },
+  user_id: {
+    type: Sequelize.STRING
   }
 })
 

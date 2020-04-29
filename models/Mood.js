@@ -7,6 +7,9 @@ const Mood = db.define('mood', {
   },
   moodscore: {
     type: Sequelize.STRING
+  },
+  user_id: {
+    type: Sequelize.STRING
   }
 })
 
