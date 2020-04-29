@@ -11,6 +11,7 @@ body{
   background-image: url("family.jpg");
   /* background-image: url("/w3images/photographer.jpg"); */
   background-color: #cccccc;
+  opacity: 0.8;
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,16 +20,16 @@ body{
 
 }
 
-.col-sm-3 {
+/* .col-sm-3 {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
-  }
+  } */
 
   img{
-      width: 400px;
-    height:400px;
+      width: 10rem;
+    height:20rem;
   }
 
   #text {
@@ -39,4 +40,9 @@ body{
     /* transform: translate(-50%, -50%); */
     color: white;
   }
- 
+
+  .container-fluid{
+
+margin: 3rem;
+
+  }

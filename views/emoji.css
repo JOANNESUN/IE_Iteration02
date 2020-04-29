@@ -1,0 +1,25 @@
+body{
+
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+.container{
+
+    
+    margin-right: 0rem;
+    padding: 0%;
+}
+
+.display-4{
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+
+img{
+
+    margin: 0rem;
+    padding: 0rem;
+}
