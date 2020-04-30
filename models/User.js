@@ -6,10 +6,10 @@ const User = db.define('user', {
     type: Sequelize.STRING
   },
   age: {
-    type: Sequelize.STRING
+    type: Sequelize.INTEGER 
   },
   height: {
-    type: Sequelize.STRING
+    type: Sequelize.INTEGER 
   },
   sex: {
     type: Sequelize.STRING

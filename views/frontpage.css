@@ -27,10 +27,15 @@ body{
     width: 40%;
   } */
 
+  /* img{
+     width: 10rem;
+     height: 10rem;
+  } */
+
   img{
-      width: 10rem;
-    height:20rem;
-  }
+    width: 10rem;
+  height:20rem;
+}
 
   #text {
     /* text-align: center;
@@ -41,8 +46,14 @@ body{
     color: white;
   }
 
-  .container-fluid{
+  .container{
 
-margin: 3rem;
+height: 400px;
+
 
   }
+/* 
+.card{
+
+  height: 3rem;
+} */

@@ -3,10 +3,10 @@ const db = require('../database');
 
 const Mood = db.define('mood', {
   datetime: {
-    type: Sequelize.STRING
+    type: Sequelize.DATE 
   },
   moodscore: {
-    type: Sequelize.STRING
+    type: Sequelize.INTEGER 
   },
   user_id: {
     type: Sequelize.STRING

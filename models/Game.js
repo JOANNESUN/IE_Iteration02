@@ -3,10 +3,10 @@ const db = require('../database');
 
 const Game = db.define('game', {
   gamescore: {
-    type: Sequelize.STRING
+    type: Sequelize.INTEGER 
   },
   datetime: {
-    type: Sequelize.STRING
+    type: Sequelize.DATE 
   },
   user_id: {
     type: Sequelize.STRING
