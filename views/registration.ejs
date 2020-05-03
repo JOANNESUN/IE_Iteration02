@@ -33,14 +33,15 @@
                 <div class="card-heading"></div>
                 <div class="card-body">
                     <h2 class="title">MemForever Registration Form</h2>
-                    <form method="POST">
+                    <form action="/info" method="POST"> 
+                    <!-- <form method="POST"> -->
                         <div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="USERNAME (please enter your email address)" name="name">
+                            <input class="input--style-1" type="text" placeholder="USERNAME (please enter your email address)" name="username">
                         </div>
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <input type="number" min="10" max="100" placeholder="BIRTHDATE" name="birthday">
+                                    <input type="number" min="10" max="100" placeholder="Age" name="age">
                                     <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                 </div>
                             </div>
@@ -58,19 +59,15 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="input-group">
-                            <input type="number" min="10" max="100" placeholder="BIRTHDATE" name="birthday">
-                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
-                        </div> -->
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <input class="input--style-1" type="number" min="50" max="250"  placeholder="HEIGHT CM" name="res_code">
+                                    <input class="input--style-1" type="number" min="50" max="250"  placeholder="Height(please enter centimeter)" name="height">
                                 </div>
                             </div>
                         </div>
                         <div class="p-t-20">
-                            <a href="/fixedToDo" class="btn btn--radius btn--green btn-lg" type="submit">Next</button>
+                            <button class="btn btn--radius btn--green btn-lg" type="submit">Next</button>
                         </div>
                     </form>
                 </div>

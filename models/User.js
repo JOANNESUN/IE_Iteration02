@@ -1,19 +1,22 @@
 const Sequelize = require('sequelize');
-const db = require('../database');
 
-const User = db.define('user', {
-  username: {
-    type: Sequelize.STRING
-  },
-  age: {
-    type: Sequelize.INTEGER 
-  },
-  height: {
-    type: Sequelize.INTEGER 
-  },
-  sex: {
-    type: Sequelize.STRING
-  }
-})
+const connection = require ("../database") // the commented line is replaced by db.js
 
-module.exports = User;
+module.exports = connection.define('user',{ // lowercase user is the name of the table in postgres
+    username: {
+        type: Sequelize.TEXT, 
+       },
+    age: {
+        type:Sequelize.INTEGER
+    },
+    height: {
+        type: Sequelize.INTEGER,},
+
+    gender: {
+          type: Sequelize.STRING
+        },
+},
+{
+  freezeTableName: true
+});
+
