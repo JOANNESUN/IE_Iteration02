@@ -16,8 +16,11 @@ module.exports = new Sequelize(database, owner, password,{
   dialect: 'postgres',
   operatorsAliases: false, 
   define: {
-    timestamps: false
-},
+    timestamps: false,
+    createdAt: "createdat",
+    updatedAt: "updatedat",
+  
+}, 
 
   pool:{
       max:5,

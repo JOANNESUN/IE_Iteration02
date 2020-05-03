@@ -8,8 +8,8 @@ const Mood = db.define('mood', {
   moodscore: {
     type: Sequelize.INTEGER 
   },
-  user_id: {
-    type: Sequelize.STRING
+  id: {
+    type: Sequelize.INTEGER
   }
 })
 

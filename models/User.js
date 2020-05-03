@@ -15,6 +15,7 @@ module.exports = connection.define('user',{ // lowercase user is the name of the
     gender: {
           type: Sequelize.STRING
         },
+  
 },
 {
   freezeTableName: true

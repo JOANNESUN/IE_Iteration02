@@ -159,7 +159,7 @@
      #BACKGROUND
      ========================================================================== */
   .bg-blue {
-    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
   }
   
   /* ==========================================================================
@@ -197,7 +197,7 @@
     padding: 0 25px;
     cursor: pointer;
     font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
-    color: #fff;
+    color: rgb(19, 15, 15);
     -webkit-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
@@ -213,18 +213,18 @@
   }
   
   .btn--green {
-    background: #0ebae6;
+    background: #f32b2b;
   }
   
   .btn--green:hover {
-    background: #37ddf3;
+    background: #f1ee2c;
   }
   
   /* ==========================================================================
      #DATE PICKER
      ========================================================================== */
   td.active {
-    background-color: #769edd;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
   }
   
   input[type="date" i] {
@@ -470,4 +470,3 @@
     height: 60% !important;
     
     }
-    

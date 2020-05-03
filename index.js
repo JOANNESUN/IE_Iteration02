@@ -22,6 +22,8 @@ app.get('/', function(req, res){ res.render('login');});
 
 app.get('/frontpage', function(req, res){ res.render('frontpage');});
 
+app.get('/real-login', function(req, res){ res.render('real-login');});
+
 app.get('/registration', function(req, res){ res.render('registration');});
 
 app.get('/fixedToDo', function(req, res){ res.render('fixedToDo');});
@@ -58,6 +60,7 @@ app.post('/info', async (req, res) => {
     console.log(req.body.gender);
 
     User.create ({ // the line here will create new rows in database
+        
         username:req.body.username,
         age:req.body.age,
         height:req.body.height,
@@ -76,8 +79,6 @@ app.post('/info', async (req, res) => {
 
         }
     );
-
-
 });
 
 app.post('/answer', function(req, res){

@@ -8,8 +8,8 @@ const Game = db.define('game', {
   datetime: {
     type: Sequelize.DATE 
   },
-  user_id: {
-    type: Sequelize.STRING
+  id: {
+    type: Sequelize.INTEGER
   }
 })
 

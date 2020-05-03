@@ -1,0 +1,20 @@
+
+/* Just some default styles for the page */
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 10px
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+
+
