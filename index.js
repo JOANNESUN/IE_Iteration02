@@ -13,11 +13,6 @@ app.set('view engine', 'ejs');
 
 app.use(express.static(__dirname+'/views')); 
 
-// set static folder
-// app.use(express.static(path.join(__dirname,'public')));
-
-// app.get('/', (req, res) => res.send('Hello World!'));
-
 app.get('/', function(req, res){ res.render('login');});
 
 app.get('/frontpage', function(req, res){ res.render('frontpage');});
@@ -39,19 +34,16 @@ app.get('/dailyreminder', function(req, res){ res.render('dailyReminder');});
 // connecting to postgres
 const connection = require ("./database");
 
-// test connection
-// connection.authenticate()
-//     .then(() => console.log('Database Connected.'))
-//     .catch(err => console.log ('error'))
-
-
 // export schema here 
 const User = require("./models/User");
+
+const Game = require("./models/Game");
 
 // connecting with database and create table in database
 connection.sync(); 
 
 // all post route below:
+// user info
 app.post('/info', async (req, res) => {
     console.log('information successsful');
     console.log(req.body.username);
@@ -81,10 +73,30 @@ app.post('/info', async (req, res) => {
     );
 });
 
-app.post('/answer', function(req, res){
-   console.log(req.body.value1); // get information from brower 
-   
-    res.render('index');
+// passing game score
+
+app.post('/answer', async (req, res)=>{
+   console.log('information successsful');
+   console.log(req.body.gamescore); // get information from brower 
+
+   Game.create ({ // the line here will create new rows in database
+        
+    gamescore:req.body.gamescore, // not sure which one 
+    
+})
+.then(
+    ()=>{
+    console.log("created successfully")
+    res.render("index");
+    }
+)
+.catch(
+    (err)=>{
+        console.log(err) 
+        res.render("game"); // if failed then go back to registration page
+
+    }
+);
 });
 
 // Gig routes

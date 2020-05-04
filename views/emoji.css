@@ -6,7 +6,7 @@ body{
 .container{
     margin: 0%;
     padding: 0%;
-    margin-left: 5rem;
+    margin-left: 7rem;
 }
 
 .display-4{
@@ -17,6 +17,12 @@ h4{
    
     margin-left: 3rem;
     margin-left: 5rem;
+    font-family: Helvetica;
+}
+
+h2{
+    text-align: center;
+    color: #861212;
 }
 
 img{
@@ -26,3 +32,39 @@ img{
     /* margin: 0rem;
     padding: 0rem; */
 }
+
+input{
+
+    font-size: 20px; 
+    width: 300px;
+}
+
+#submit-button{
+	background-color:#f7c230;
+	border-radius:28px;
+	/* border:1px solid #18ab29; */
+	display:inline-block;
+	cursor:pointer;
+	color:#0f0f0f;
+	font-family:Arial;
+	font-size:21px;
+	padding:16px 31px;
+	text-decoration:none;
+    /* text-shadow:0px 1px 0px #2f6627; */
+    width: 10rem;
+    margin-left: 3rem;
+}
+.submit-button:hover {
+	background-color:#5cbf2a;
+}
+.submit-button:active {
+	position:relative;
+	top:1px;
+}
+
+
+  h2{
+    font-family: Monaco;
+  }
+
+      

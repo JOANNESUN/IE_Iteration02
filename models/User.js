@@ -18,6 +18,6 @@ module.exports = connection.define('user',{ // lowercase user is the name of the
   
 },
 {
-  freezeTableName: true
+  freezeTableName: true  // issues with postgres for plural
 });
 

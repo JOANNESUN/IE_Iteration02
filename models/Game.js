@@ -1,16 +1,18 @@
 const Sequelize = require('sequelize');
+
 const db = require('../database');
 
-const Game = db.define('game', {
+module.exports = db.define('game', {
   gamescore: {
     type: Sequelize.INTEGER 
   },
   datetime: {
     type: Sequelize.DATE 
   },
-  id: {
+  userid: {
     type: Sequelize.INTEGER
-  }
-})
-
-module.exports = Game;
+  },
+},
+{
+  freezeTableName: true
+});

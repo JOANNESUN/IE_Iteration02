@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="emoji.css">  
 </head>
+
   <body>
       <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -50,63 +51,54 @@
         <div class="container">
           <div class="row">
               <div class="col-sm">
+                <h2>happy</h2>
                 <img src="1.png" alt="">
                 <br>
                 <br>
-                <h5>1 means angry, 8 means very happy</h5>
                 <br>
-                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                    <div class="btn-group mr-2" role="group" aria-label="First group">
-                      <a button type="button" class="btn btn-secondary" href="/home">1</button></a>
-                      <button type="button" class="btn btn-secondary">2</button>
-                      <button type="button" class="btn btn-secondary">3</button>
-                      <button type="button" class="btn btn-secondary">4</button>
-                      <button type="button" class="btn btn-secondary">5</button>
-                      <button type="button" class="btn btn-secondary">6</button>
-                      <button type="button" class="btn btn-secondary">7</button>
-                      <button type="button" class="btn btn-secondary">8</button>
-                    </div>
-                  </div>
+                <form action="">
+                <input type="range" id="send" min="0" max="30" oninput="result.value=send.value">
+                <br>
+                <input type="text" id="result">
+                <br>
+                <br>
+                <a href="/home" input id = "submit-button" type="submit"></a>
+                </form>
+              
+              
           </div>
               <div class="col-sm">
-                
+              <h2>angry</h2>
                     <img src="7.png" alt="">
                     <br>
                     <br>
-                    <h5>1 means angry, 8 means very angry</h5>
                     <br>
-                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                        <div class="btn-group mr-2" role="group" aria-label="First group">
-                          <a button type="button" class="btn btn-secondary" href="/home">1</button></a>
-                          <button type="button" class="btn btn-secondary">2</button>
-                          <button type="button" class="btn btn-secondary">3</button>
-                          <button type="button" class="btn btn-secondary">4</button>
-                          <button type="button" class="btn btn-secondary">5</button>
-                          <button type="button" class="btn btn-secondary">6</button>
-                          <button type="button" class="btn btn-secondary">7</button>
-                          <button type="button" class="btn btn-secondary">8</button>
-                        </div>
-                   </div>
+                   
+                    <form action="">
+                    <input type="range" id="send" min="0" max="30" oninput="result.value=send.value">
+                    <br>
+                    <input type="text" id="result">
+                    <br>
+                    <br>
+                    <input id = "submit-button" type="submit">
+                    </form>
               </div>
               <br>
               <div class="col-sm">
+                <h2>sad</h2>
                     <img src="3.png" alt="">
                     <br>
                     <br>
-                    <h5>1 means sad, 8 means very sad</h5>
                     <br>
-                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                        <div class="btn-group mr-2" role="group" aria-label="First group">
-                          <a button type="button" class="btn btn-secondary" href="/home">1</button></a>
-                          <button type="button" class="btn btn-secondary">2</button>
-                          <button type="button" class="btn btn-secondary">3</button>
-                          <button type="button" class="btn btn-secondary">4</button>
-                          <button type="button" class="btn btn-secondary">5</button>
-                          <button type="button" class="btn btn-secondary">6</button>
-                          <button type="button" class="btn btn-secondary">7</button>
-                          <button type="button" class="btn btn-secondary">8</button>
-                        </div>
-                      </div>
+                   
+                    <form action="">
+                    <input type="range" id="send" min="0" max="30" oninput="result.value=send.value">
+                    <br>
+                    <input type="text" id="result">
+                    <br>
+                    <br>
+                    <input id = "submit-button" type="submit">
+                    </form>
               </div>
             </div>
           </div>

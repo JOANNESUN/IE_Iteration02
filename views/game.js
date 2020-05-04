@@ -75,7 +75,7 @@ if(shuffledQuestions.length > currentQuestionIndex +1){
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send(
       JSON.stringify({
-        value1: score, // passing value to server with key: value pair
+        gamescore: score, // passing value to server with key: value pair, changed from value1 to gamescore
       })
     );
 }
@@ -103,7 +103,7 @@ element.classList.remove('wrong')
 
 const questions = [
     {QID: "1",
-        question: "What do I use to brush teeth?",
+        question: "I use (below) to brush teeth",
       answers: [
           {text: 'Tooth Brush', correct: true},
           {text: 'Glasses', correct: false},
@@ -121,9 +121,105 @@ const questions = [
     {QID: "3",
         question: "Kitchen is where I can",
     answers: [
-      {text: 'urinate', correct: false},
+      {text: 'withdraw money', correct: false},
       {text: 'take a shower', correct: false},
       {text: 'wash my car', correct: false},
       {text: 'cook dinner', correct: true},]
-    }
+    },
+    {QID: "4",
+    question: "Animal name beginning with the letter S",
+    answers: [
+    {text: 'Tigar', correct: false},
+    {text: 'Sugar', correct: false},
+    {text: 'Spider', correct: false},
+    {text: 'Skunk', correct: true},]
+    },
+    {QID: "5",
+    question: "40 * 50 = ",
+    answers: [
+    {text: '40', correct: false},
+    {text: '50', correct: false},
+    {text: '300', correct: false},
+    {text: '200', correct: true},]
+    },
+    {QID: "6",
+    question: "Which one is the largest number?",
+    answers: [
+    {text: '456', correct: true},
+    {text: '123', correct: false},
+    {text: '111', correct: false},
+    {text: '340', correct: false},]
+    },
+    {QID: "7",
+    question: "what the missing number at the end of the series. 5, 12, 19, 26,?",
+    answers: [
+    {text: '31', correct: false},
+    {text: '32', correct: false},
+    {text: '33', correct: false},
+    {text: '34', correct: true},]
+    },
+    {QID: "8",
+    question: "5 + 2 = ",
+    answers: [
+    {text: '5', correct: false},
+    {text: '7', correct: true},
+    {text: '52', correct: false},
+    {text: '12', correct: false},]
+    },
+    {QID: "9",
+    question: "I go to a bank to",
+    answers: [
+    {text: 'Deposit money', correct: true},
+    {text: 'Watch a movie', correct: false},
+    {text: 'Cook dinner', correct: false},
+    {text: 'cut my hair', correct: false},]
+    },
+    {QID: "10",
+    question: "33 / 11 =",
+    answers: [
+    {text: '33', correct: false},
+    {text: '3', correct: true},
+    {text: '11', correct: false},
+    {text: 'unknown', correct: false},]
+    },
+    {QID: "11",
+    question: "Fill in the missing word: An Espress Book Machine (EBM) prints and binds a high-quality copy of a book right in the store, in just a few minutes. There’s a catalogue of millions of books to choose from, including rare manuscripts and books that publishers are no longer _______",
+    answers: [
+    {text: 'printing', correct: true},
+    {text: 'asking', correct: false},
+    {text: 'seeking', correct: false},
+    {text: 'recommending', correct: false},]
+    },
+    {QID: "12",
+    question: "Which of the following is the opposite of the word dark?",
+    answers: [
+    {text: 'Gloomy', correct: false},
+    {text: 'Happy', correct: false},
+    {text: 'Day', correct: false},
+    {text: 'Light', correct: true},]
+    },
+    {QID: "13",
+    question: "which number is the smallest?",
+    answers: [
+    {text: '67', correct: false},
+    {text: '90', correct: false},
+    {text: '16.5', correct: true},
+    {text: '34', correct: false},]
+    },
+    {QID: "14",
+    question: "Country name beginning with the letter A",
+    answers: [
+    {text: 'Adelaide', correct: false},
+    {text: 'Australia', correct: true},
+    {text: 'India', correct: false},
+    {text: 'China', correct: false},]
+    },
+    {QID: "15",
+    question: "Letter is to word as house is to",
+    answers: [
+    {text: 'mansion', correct: false},
+    {text: 'room', correct: true},
+    {text: 'hospital', correct: false},
+    {text: 'homeless', correct: false},]
+    },
   ];
