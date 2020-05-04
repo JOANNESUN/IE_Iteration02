@@ -59,6 +59,40 @@ height: 400px;
 
   height: 3rem;
 } */
+
+#box01{
+
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+    width:30rem;
+    height: 20rem;
+
+    /* transform: translateY(-30px); */
+    transition: .5s;
+    box-shadow: 0 0 30px rgba(0,0,0,.2);
+}
+
+.h5{
+
+  font-family: Courier New;
+  
+
+}
+
+
+
+.card-body{
+  margin: 10px;
+  height: 50px;
+  padding: 2rem;
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+  
+}
+
 .fbox{
     display: flex;
     justify-content: flex-start;
@@ -72,6 +106,7 @@ height: 400px;
   background-blend-mode: normal, lighten, soft-light;
     padding: 50px 0;
     box-sizing: border-box;
+    margin: auto;
   }
   .card{
   /*   width: calc(100% / 3 - 100px); */
@@ -91,6 +126,7 @@ height: 400px;
     box-shadow: 0 0 30px rgba(0,0,0,.2);
   }
   
+
   /* .card:nth-of-type(2):hover .card__image img{
     transform: scale(1.2);
     transition: .5s;
@@ -125,5 +161,20 @@ height: 400px;
     height: 30%;
     padding: 0px 20px;
     box-sizing: border-box;
-    background-color: #ffffff;
+    background-color: #faf4f4;
   }
+
+ h5{
+
+  margin-left: 2rem;
+  margin-right: 1rem;
+
+ }
+
+ h4{
+ 
+  margin-left: 4rem;
+ 
+}
+
+ 

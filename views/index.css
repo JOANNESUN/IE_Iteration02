@@ -1,6 +1,79 @@
-body{
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
 
-    background-color: rgb(164, 240, 243);
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.text {
+  position: absolute;
+  width: 450px;
+  left: 50%;
+  margin-left: -225px;
+  height: 40px;
+  top: 50%;
+  margin-top: -20px;
+}
+
+.display-4 {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.word {
+  position: absolute;
+  width: 220px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.belize {
+  color: #2980b9;
+}
+
+.pomegranate {
+  color: #c0392b;
+}
+
+.green {
+  color: #16a085;
+}
+
+.midnight {
+  color: #2c3e50;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap'); */
+
+body{
+  background-image: linear-gradient(-225deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 100%);
     
 }
   
@@ -20,6 +93,13 @@ h2{
     text-align: center;
 }
 
+h5{
+
+  margin-left: 3rem;
+  margin-right: 3rem;
+
+}
+
 /* .display-5{
     margin: 3rem;
 }  */
@@ -27,6 +107,7 @@ h2{
 .container{
     height: 100%;
   /* background-color: #f4f4f4; */
+
   background-color: whitesmoke; 
   background-blend-mode: normal, lighten, soft-light;
     padding: 50px 0;

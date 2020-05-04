@@ -6,6 +6,7 @@ body{
 .container{
     margin: 0%;
     padding: 0%;
+    margin-left: 5rem;
 }
 
 .display-4{
@@ -13,12 +14,15 @@ body{
 }
 
 h4{
-    text-align: center;
+   
+    margin-left: 3rem;
+    margin-left: 5rem;
 }
 
 img{
     width: 150px;
     height: 150px;
+    margin-left: 3rem;
     /* margin: 0rem;
     padding: 0rem; */
 }

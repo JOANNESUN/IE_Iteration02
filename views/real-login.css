@@ -159,7 +159,7 @@
      #BACKGROUND
      ========================================================================== */
   .bg-blue {
-    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
   }
   
   /* ==========================================================================
@@ -213,11 +213,11 @@
   }
   
   .btn--green {
-    background: #f32b2b;
+    background: #2b71f3;
   }
   
   .btn--green:hover {
-    background: #f1ee2c;
+    background: #8af1f1;
   }
   
   /* ==========================================================================
@@ -442,7 +442,7 @@
   }
   
   .card-1 .card-heading {
-    background: url("family.jpg") center center/cover no-repeat;
+    background: url("frontpage04.jpg") center center/cover no-repeat;
     opacity: 0.8;
     padding-top: 210px;
   }
