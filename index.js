@@ -44,7 +44,7 @@ connection.sync();
 
 // all post route below:
 // user info
-app.post('/info', async (req, res) => {
+app.post('/info', (req, res) => {
     console.log('information successsful');
     console.log(req.body.username);
     console.log(req.body.age);
@@ -75,14 +75,14 @@ app.post('/info', async (req, res) => {
 
 // passing game score
 
-app.post('/answer', async (req, res)=>{
+app.post('/answer', (req, res)=>{
    console.log('information successsful');
    console.log(req.body.gamescore); // get information from brower 
-
+   let date = Date.now();
    Game.create ({ // the line here will create new rows in database
         
     gamescore:req.body.gamescore, // not sure which one 
-    
+    datetime:date,
 })
 .then(
     ()=>{

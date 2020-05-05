@@ -1,14 +1,16 @@
 
 const startButton= document.getElementById('start-btn')
+const endloop = document.getElementById('answer-buttons')
 const nextButton= document.getElementById('next-btn')
-const questionContainerElements= document.getElementById('question container')
+
+const questionContainerElements= document.getElementById('question_container')
 const questionElement = document.getElementById('question')
 const answerButtonsElment = document.getElementById('answer-buttons')
 var score = 0
 
 // set the question randomly
 
-let shuffledQuestions, currentQuestionIndex
+var shuffledQuestions, currentQuestionIndex
 
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', ()=>{
@@ -19,6 +21,9 @@ nextButton.addEventListener('click', ()=>{
 function startGame(){
 startButton.classList.add('hide');
 shuffledQuestions = questions.sort(()=> Math.random() - .5)
+shuffledQuestions = shuffledQuestions.slice(0,5)
+console.log(shuffledQuestions.length);
+
 currentQuestionIndex = 0
 questionContainerElements.classList.remove('hide');
 
@@ -68,8 +73,8 @@ if(shuffledQuestions.length > currentQuestionIndex +1){
 
     nextButton.classList.remove('hide')
 }else{
-    startButton.innerText='restart'
-    startButton.classList.remove('hide')
+    // startButton.innerText='restart'
+    // startButton.classList.remove('hide')
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "/answer", true);
     xhr.setRequestHeader("Content-Type", "application/json");
@@ -78,8 +83,17 @@ if(shuffledQuestions.length > currentQuestionIndex +1){
         gamescore: score, // passing value to server with key: value pair, changed from value1 to gamescore
       })
     );
+    endloopMethod();
 }
 }
+
+function endloopMethod(){
+    endloop.classList.add('hide')
+    document.getElementById('question').innerHTML="Congragulations! Game Finished"
+    
+}
+
+
 
 function setStatusClass(element, correct){
 
