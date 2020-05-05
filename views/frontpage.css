@@ -121,7 +121,7 @@ height: 400px;
     z-index: 1;
   }
   .card:first-of-type:hover{
-    transform: translateY(-30px);
+    transform: translateY(-10px);
     transition: .5s;
     box-shadow: 0 0 30px rgba(0,0,0,.2);
   }
