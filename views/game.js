@@ -2,6 +2,7 @@
 const startButton= document.getElementById('start-btn')
 const endloop = document.getElementById('answer-buttons')
 const nextButton= document.getElementById('next-btn')
+const endofgamebutton = document.getElementById('endgame')
 
 const questionContainerElements= document.getElementById('question_container')
 const questionElement = document.getElementById('question')
@@ -21,7 +22,7 @@ nextButton.addEventListener('click', ()=>{
 function startGame(){
 startButton.classList.add('hide');
 shuffledQuestions = questions.sort(()=> Math.random() - .5)
-shuffledQuestions = shuffledQuestions.slice(0,5)
+shuffledQuestions = shuffledQuestions.slice(0,8)
 console.log(shuffledQuestions.length);
 
 currentQuestionIndex = 0
@@ -35,7 +36,6 @@ setNextQuestion();
 function setNextQuestion(){
     resetState()
 showQuestion(shuffledQuestions[currentQuestionIndex])
-
 }
 
 function showQuestion(question){
@@ -90,10 +90,9 @@ if(shuffledQuestions.length > currentQuestionIndex +1){
 function endloopMethod(){
     endloop.classList.add('hide')
     document.getElementById('question').innerHTML="Congragulations! Game Finished"
-    
+    endofgamebutton.classList.remove('hide')
+    process.exit(1)
 }
-
-
 
 function setStatusClass(element, correct){
 
@@ -148,13 +147,13 @@ const questions = [
     {text: 'Spider', correct: false},
     {text: 'Skunk', correct: true},]
     },
-    {QID: "5",
+    {QID: "5", 
     question: "40 * 50 = ",
     answers: [
     {text: '40', correct: false},
     {text: '50', correct: false},
     {text: '300', correct: false},
-    {text: '200', correct: true},]
+    {text: '2000', correct: true},]
     },
     {QID: "6",
     question: "Which one is the largest number?",
@@ -187,7 +186,7 @@ const questions = [
     {text: 'Watch a movie', correct: false},
     {text: 'Cook dinner', correct: false},
     {text: 'cut my hair', correct: false},]
-    },
+    }, 
     {QID: "10",
     question: "33 / 11 =",
     answers: [

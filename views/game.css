@@ -3,6 +3,8 @@
     font-family: 'Courier New', Courier, monospace;
     
     } */
+
+  
     
     :root{
         --hue-neutral:200;
@@ -19,7 +21,8 @@
         height: 100vh;
         justify-content: center;
         align-items: center;
-        background-color: hsl(var(--hue), 100%, 50%);
+        /* background-color: hsl(var(--hue), 100%, 50%); */
+        background-image: linear-gradient(-225deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 100%);
     }
     
     body.correct{
@@ -29,7 +32,9 @@
     
     body.wrong{
     
+        /* --hue: var(--hue-wrong); */
         --hue: var(--hue-wrong);
+        
     }
     
     .container{
@@ -65,13 +70,14 @@
     }
     
     .btn.correct{
-      background: rgb(113, 218, 16);
+      background: rgb(77, 231, 72);
+      
       
     /* --hue: var(--hue-correct); */
     }
     
     .btn.wrong{
-    background-color: #f17991e3;
+    background-color: #fcf9fae3;
         /* --hue: var(--hue-wrong);   */
     }
     

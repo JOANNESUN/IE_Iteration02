@@ -25,6 +25,8 @@ app.get('/fixedToDo', function(req, res){ res.render('fixedToDo');});
 
 app.get('/home', function(req, res){ res.render('index');});
 
+app.post('/home', function(req, res){ res.render('index');});
+
 app.get('/emoji', function(req, res){ res.render('emoji');});
 
 app.get('/game', function(req, res){ res.render('game');});
