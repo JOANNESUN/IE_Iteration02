@@ -1,16 +1,6 @@
 <!doctype html>
 <html lang="en">
-<!-- <style>
-  .row {
-    display: flex;
-  }
-  
-  .row > div {
-    flex: 1;
-    border: 10px solid rgba(255,255,255,.5);
-  }
-  
-</style> -->
+
 <head>
     <title>emotion</title>
     <!-- Required meta tags -->
@@ -37,14 +27,11 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                     </li>
-                    </li>
                 </ul>
                 <select data-placeholder="Choose a Language...">
                     <option value="ZH">Chinese (Mandarin)</option>
                     <option value="EN">English</option>
                 </select>
-            </div>
-            </div>
             </div>
         </nav>
     </header>
@@ -52,47 +39,42 @@
     <main>
         <br>
         <br>
-       
-        <div class="col-md-12">
-            <h3 class="display-4">Tell us how do you feel today ?</h3></div>
-<br>
-        <h4>Grag the bar from left to right or fill in a number beween 1 to 3, 
-         1 means slightly, 3 means strongly, you only need to choose one emotion ❤️
-        </h4></div>
-        <br>
-        <br>
-        <br>
 
+        <div class="col-md-12">
+            <h6 class="display-4">Tell us how do you feel today ?</h6></div>
+        <br>
+        <h5>Grag the bar from left to right or fill in a number beween 1 to 3, 
+         1 means slightly, 3 means strongly, you only need to choose one emotion ❤️
+        </h5>
+        <br>
+        <br>
+        <br>
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    
-                        <h2>Satisfied</h2>
-                        <img src="1.png" alt="">
+
+                    <h3>Satisfied</h3>
+                    <img src="b3.png" alt="">
+                    <br>
+                    <br>
+                    <form action="/home" method="POST">
+                        <input type="range" id="send" min="1" max="3" oninput="result.value=send.value">
+                        <label for="range">please enter between 1 and 3:</label>
+                        <input type="number" name="range" min="1" max="3" id="result">
                         <br>
-                     
                         <br>
-                        <form action="/home" method="POST"> 
-                            <input type="range" id="send" min="1" max="3" oninput="result.value=send.value">
-                            <br>
-                            <input type="text" id="result">
-                            <br>
-                            <br>
-                            <input id="submit-button" type="submit">
-                        </form>
-                    
+                        <input id="submit-button" type="submit">
+                    </form>
                 </div>
                 <div class="col-md-6">
-                    <h2>Cheerful</h2>
-                    <img src="7.png" alt="">
+                    <h3>Cheerful</h3>
+                    <img src="b1.png" alt="">
                     <br>
-                    
                     <br>
-
-                    <form action="/home" method="POST"> 
+                    <form action="/home" method="POST">
                         <input type="range" id="send" min="1" max="3" oninput="result.value=send.value">
-                        <br>
-                        <input type="text" id="result">
+                        <label for="range">please enter between 1 and 3:</label>
+                        <input type="number" name="range" min="1" max="3" id="result">
                         <br>
                         <br>
                         <input id="submit-button" type="submit">
@@ -100,16 +82,14 @@
                 </div>
                 <br>
                 <div class="col-md-6">
-                    <h2>Sad</h2>
-                    <img src="3.png" alt="">
+                    <h3>Sad</h3>
+                    <img src="b6.png" alt="">
                     <br>
                     <br>
-                    
-
-                    <form action="/home" method="POST"> 
+                    <form action="/home" method="POST">
                         <input type="range" id="send" min="1" max="3" oninput="result.value=send.value">
-                        <br>
-                        <input type="text" id="result">
+                        <label for="range">please enter between 1 and 3:</label>
+                        <input type="number" name="range" min="1" max="3" id="result">
                         <br>
                         <br>
                         <input id="submit-button" type="submit">
@@ -117,39 +97,35 @@
                 </div>
                 <br>
                 <div class="col-md-6">
-                    <h2>Angry</h2>
-                    <img src="3.png" alt="">
+                    <h3>Angry</h3>
+                    <img src="b4.png" alt="">
                     <br>
-                    
                     <br>
-
-                    <form action="/home" method="POST"> 
+                    <form action="/home" method="POST">
                         <input type="range" id="send" min="1" max="3" oninput="result.value=send.value">
+                        <label for="range">please enter between 1 and 3:</label>
+                        <input type="number" name="range" min="1" max="3" id="result">
                         <br>
-                        <input type="text" id="result">
                         <br>
-                        <br>
-                        <input id="submit-button"  type="submit">
+                        <input id="submit-button" type="submit">
                     </form>
                 </div>
             </div>
         </div>
     </main>
-
     <footer>
-          <!-- Copyright -->
-  <!-- ❤️  -->
-  <br>
-  <hr>
-  <br>
-  <div class="footer-copyright text-center">&copy; Developed with ❤️</i> by
-    <a  class="white-text"> <strong>team name</strong> </a>. 
-  </div>
-  <br>
-  <br>
-  <!-- Copyright -->
+        <!-- Copyright -->
+        <!-- ❤️  -->
+        <br>
+        <hr>
+        <br>
+        <div class="footer-copyright text-center">&copy; Developed with ❤️
+            <a class="white-text"> <strong>team name</strong> </a>.
+        </div>
+        <br>
+        <br>
+        <!-- Copyright -->
     </footer>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

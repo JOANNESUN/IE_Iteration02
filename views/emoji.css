@@ -13,16 +13,17 @@ body{
     text-align: center;
 }
 
-h4{
+h5{
    
-    margin-left: 5rem;
+    margin-left: 8rem;
     margin-left: 5rem;
     font-family: Helvetica;
 }
 
-h2{
+h3{
     margin-left: 3rem;
-    color: #bd1414;
+    color: #eb7a11;
+    font-family: Helvetica;
 }
 
 img{

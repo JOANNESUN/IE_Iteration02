@@ -73,7 +73,9 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap'); */
 
 body{
-  background-image: linear-gradient(-225deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 100%);
+
+  background-color: rgb(223, 175, 195);
+  /* background-image: linear-gradient(-225deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 100%); */
     
 }
   
@@ -118,7 +120,7 @@ h5{
   .card{
   /*   width: calc(100% / 3 - 100px); */
     width: 450px;
-    height: 400px;
+    height: 340px;
     margin: 10px;
     box-shadow: 0px 3px 6px #00000050;
   /*   border-radius: 10px; */
@@ -145,4 +147,10 @@ h5{
     height: 80%;
     object-fit: cover;
     transition: .5s;
+  }
+
+  #cardbtn{
+
+  margin-left: 5rem;
+  background-color: #105961;
   }

@@ -121,11 +121,14 @@ height: 400px;
     z-index: 1;
   }
   .card:first-of-type:hover{
-    transform: translateY(-10px);
-    transition: .5s;
+    /* transform: translateY(-10px);
+    transition: .5s; */
     box-shadow: 0 0 30px rgba(0,0,0,.2);
   }
-  
+
+  .jumbotron{
+    height: 100vh;
+}
 
   /* .card:nth-of-type(2):hover .card__image img{
     transform: scale(1.2);
@@ -177,4 +180,8 @@ height: 400px;
  
 }
 
+.container-1{
+  margin-top: 15rem;
+  margin-left: 10rem;
+}
  

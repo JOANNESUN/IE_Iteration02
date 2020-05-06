@@ -61,13 +61,13 @@
     
         --hue: var(--hue-neutral);
         border-radius: 5px; 
-        border: 2px solid black;
+        border: 2px solid rgb(242, 131, 28);
         background-color: rgb(237, 242, 245);
     }
     
     .btn:hover{
     
-        border-color: #c50af3;
+        border-color: #f9f7fa;
     }
     
     .btn.correct{
