@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const session = require('express-session'); 
 
 // bring connection from database.js
 
@@ -31,7 +32,13 @@ app.get('/emoji', function(req, res){ res.render('emoji');});
 
 app.get('/game', function(req, res){ res.render('game');});
 
-app.get('/dailyreminder', function(req, res){ res.render('dailyReminder');});
+app.get('/card_alter', function(req, res){ res.render('card_alter');});
+
+app.use(session({
+    secret: 'Joanne',// this is intializing session 
+    resave : false,
+    saveUninitialized: false
+  }))//cookie for session
 
 // connecting to postgres
 const connection = require ("./database");

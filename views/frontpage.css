@@ -1,7 +1,8 @@
 body{
 
-  background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
-   
+  background-color: lavenderblush;
+  /* background-color: rgb(250, 122, 63);
+    */
     
 }
 
@@ -20,45 +21,20 @@ body{
 
 }
 
-/* .col-sm-3 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-  } */
-
-  /* img{
-     width: 10rem;
-     height: 10rem;
-  } */
-
-  /* img{
-    width: 10rem;
-  height:20rem;
-} */
-
   #text {
-    /* text-align: center;
+    /* text-align: center; */
     position: absolute;
     top: 50%;
-    left: 50%; */
-    /* transform: translate(-50%, -50%); */
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: rgb(11, 12, 12); 
     
     
   }
-/* 
-  .container{
 
-height: 400px;
-
-
-  } */
-/* 
-.card{
-
-  height: 3rem;
-} */
+  #regis-text{
+    margin-left: 0rem;
+  }
 
 #box01{
 
@@ -77,11 +53,7 @@ height: 400px;
 .h5{
 
   font-family: Courier New;
-  
-
 }
-
-
 
 .card-body{
   margin: 10px;
@@ -102,11 +74,12 @@ height: 400px;
   .container{
     height: 100%;
   /* background-color: #f4f4f4; */
-  background-color: whitesmoke; 
-  background-blend-mode: normal, lighten, soft-light;
+  /* background-color: whitesmoke; 
+  background-blend-mode: normal, lighten, soft-light; */
     padding: 50px 0;
     box-sizing: border-box;
     margin: auto;
+
   }
   .card{
   /*   width: calc(100% / 3 - 100px); */
@@ -147,7 +120,7 @@ height: 400px;
   .card__image{
     margin-top: 0px;
     width: 100%;
-    height: 80%;
+    height: 100%;
     overflow: hidden;
    
     
@@ -159,9 +132,10 @@ height: 400px;
     transition: .5s;
    
   }
+
   .card__text{
     width: 100%;
-    height: 30%;
+    height: 0%;
     padding: 0px 20px;
     box-sizing: border-box;
     background-color: #faf4f4;
@@ -176,7 +150,8 @@ height: 400px;
 
  h4{
  
-  margin-left: 4rem;
+  margin-left: 2rem;
+  color: rgb(236, 138, 26);
  
 }
 
@@ -185,3 +160,69 @@ height: 400px;
   margin-left: 10rem;
 }
  
+.card-img-top{
+  width: 100%;
+    height: 100%;
+
+}
+
+/* #card-1{  // this is border of the image
+
+  background-color: coral;
+} */
+
+/* #card-1{ 
+
+  background-color: rgb(252, 207, 85);
+}
+
+#card-2{ 
+
+  background-color: rgb(252, 86, 158);
+}
+
+#card-3{ 
+
+  background-color: rgb(250, 122, 63);
+}
+
+#card-4{ 
+
+  background-color: rgb(154, 95, 237);
+}
+
+#card-5{ 
+
+  background-color: rgb(106, 160, 247);
+} */
+
+.display-1{
+
+  color: #FB5607;
+}
+
+.container-head{
+
+  margin-left: 0rem;
+}
+
+/* .row:hover{
+ transform: translateY(-10px);
+    transition: .5s; 
+    box-shadow: 0 0 30px rgba(0,0,0,.2);
+  background-color: rgb(250, 248, 250);
+} */
+
+#row-4:hover{
+ transform: translateY(-10px);
+    transition: .5s; 
+    box-shadow: 0 0 30px rgba(0,0,0,.2);
+  background-color: rgb(250, 248, 250);
+} 
+
+#row-2:hover{
+  transform: translateY(-10px);
+     transition: .5s; 
+     box-shadow: 0 0 30px rgba(0,0,0,.2);
+   background-color: rgb(250, 248, 250);
+ } 

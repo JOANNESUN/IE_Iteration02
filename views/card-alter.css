@@ -9,15 +9,16 @@ h1{
   color: rgb(194, 115, 11);
 } 
 
-* {
+/* * {
     box-sizing: border-box;
     font-family: sans-serif;
-    padding: 0;
+    /* padding: 0;
     margin-right: 1rem;
-    width: 65rem;
+    width: 65rem; 
+    background-color: burlywood;
    
-}
-  
+} */
+   
   body {
     
     background: url(frontpage05.jpg) no-repeat center center fixed; 
@@ -31,6 +32,8 @@ h1{
     margin-bottom: 30px;
   }
   
-  
+  /* #card-color{
+    background-color: darksalmon;
+  } */
   
   
