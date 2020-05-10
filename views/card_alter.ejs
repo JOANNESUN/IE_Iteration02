@@ -52,14 +52,22 @@
         </header>
         <main>
         <h1 class="display-3">Daily Reminder</h1>
-
-        <user-card name='Wife Diana' avatar="wife.png" id="card-color">
+        <user-card name='Wife Diana' avatar="<%= ImageName %>" id="card-color">
+          <div class="user-card__slot" slot="message">
+           <!-- this form submits data in file format,  enctype encripted for allowing file upload  -->
+          <form action="/pictureUpload" method="POST" enctype="multipart/form-data"> 
+             <input type="file" name="picture01"/> 
+             <!-- name varialbe should pass to multer object obj.single('name varialbe') -->
+            <input id="submit-button" type="submit"/>
+          </form>
+          </div>
           <div class="user-card__slot" slot="message">I love you</div>
           <div class="user-card__slot" slot="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet asperiores itaque obcaecati repellendus.</div>
 
-          <div class="user-card__slot" slot="phone">555-123-6666</div>
+          <div class="user-card__slot" slot="phone">405-886-266</div>
+         
         </user-card>
-        
+   
         <user-card name='Son David' avatar="son.png">
           <div class="user-card__slot" slot="message">Dad Please call me</div>
           <div class="user-card__slot" slot="phone">555-555-55555</div>
