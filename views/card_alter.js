@@ -1,11 +1,13 @@
 const template = document.createElement('template')
 
+
+
 template.innerHTML = `
   <style>
     .user-card {
       align-items: center;
       background-color: #f9f9f9;
-      border-bottom: 5px solid purple;
+      
       display: flex;
       justify-content: space-between;
       margin-bottom: 30px;
@@ -49,12 +51,12 @@ template.innerHTML = `
       margin: 0 0 16px 0;
     }
     .user-card a {
-      color: purple;
+      color: black;
       padding-left: 4px;
       text-decoration: none;
     }
     .user-card .button {
-      background-color: purple;
+      background-color: #F15156;
       border: none;
       border-radius: 10px;
       color: white;
@@ -62,7 +64,7 @@ template.innerHTML = `
       display: block;
       padding: 8px 16px;
       text-decoration: none;
-      width: fit-content;
+      width: 5rem;
     }
   </style>
 

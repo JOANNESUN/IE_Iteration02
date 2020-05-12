@@ -1,12 +1,14 @@
 
 /* Just some default styles for the page */
 
-
+.container:hover{
+  color: rgb(8, 111, 129);
+   
+}
 
 h1{
-
   text-align: center;
-  color: rgb(194, 115, 11);
+  color: rgb(156, 93, 9);
 } 
 
 /* * {
@@ -21,7 +23,7 @@ h1{
    
   body {
     
-    background: url(frontpage05.jpg) no-repeat center center fixed; 
+    background: url(bg01.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover; 
