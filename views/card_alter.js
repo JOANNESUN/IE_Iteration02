@@ -73,6 +73,7 @@ template.innerHTML = `
     <div class="user-card__info">
       <h3></h3>
       <div class="hidden-info">
+        <p>Contact:<a href="<slot name='contact' />"><slot name='contact' /></a></p>
         <p>Call:<a href="tel:<slot name='phone' />"><slot name='phone' /></a></p>
         <p>Message:<a href="<slot name='message' />"><slot name='message' /></a></p>
       </div>

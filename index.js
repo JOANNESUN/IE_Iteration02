@@ -24,7 +24,9 @@ app.get('/real-login', function(req, res){ res.render('real-login');});
 
 app.get('/registration', function(req, res){ res.render('registration');});
 
-app.get('/fixedToDo', function(req, res){ res.render('fixedToDo');});
+// app.get('/fixedToDo', function(req, res){ res.render('fixedToDo');});
+
+app.get('/todolist', function(req, res){ res.render('todolist');});
 
 app.get('/home', function(req, res){ res.render('index');});
 
@@ -34,7 +36,7 @@ app.get('/emoji', function(req, res){ res.render('emoji');});
 
 app.get('/game', function(req, res){ res.render('game');});
 
-app.get('/card_alter', function(req, res){ res.render('card_alter',  {ImageName: fileOne});});
+// app.get('/card_alter', function(req, res){ res.render('card_alter',  {ImageName: fileOne});});
 
 app.use(session({
     secret: 'Joanne',// this is intializing session 
@@ -49,6 +51,8 @@ const connection = require ("./database");
 const User = require("./models/User");
 
 const Game = require("./models/Game");
+
+const dailyContact = require("./models/dailyContact")
 
 // connecting with database and create table in database
 connection.sync(); 
@@ -154,6 +158,47 @@ const mime = allowedFileTypes.test(file.mimetype);
  
  }).single('picture01'); // upload.single('file') at once
  
+ // card_alter edit sent to this page 
+ app.post('/edit_01',(req, res) => {
+    console.log("edit successful");
+    res.render('edit_01_return');
+    // app.get('/edit_01_return', function(req, res){ res.render('edit_01_return');});
+
+ })
+
+ // pass information to database 
+ app.post('/edit_01_submit', (req, res) => {
+    console.log('information successsful');
+    console.log(req.body.contactName);
+    console.log(req.body.contactPhone);
+    console.log(req.body.contactMessage);
+    
+
+    dailyContact.create ({ // the line here will create new rows in database
+        
+        age:req.body.contactName,
+        height:req.body.contactPhone,
+        gender:req.body.contactMessage,
+    })
+    .then(
+        ()=>{
+        console.log("created successfully")
+        // res.render("success");
+        }
+    )
+    .catch(
+        (err)=>{
+            console.log(err) 
+            res.render("card_alter"); // if failed then go back to registration page
+
+        }
+    );
+});
+
+
+
+
+
 //
  app.post('/pictureUpload', (req, res) => {
  
@@ -179,6 +224,10 @@ const mime = allowedFileTypes.test(file.mimetype);
  );
 // Gig routes
 // app.use('/gigs', require('./routes/gigs'));
+
+
+
+
 
 const PORT = process.env.PORT || 3012 
 

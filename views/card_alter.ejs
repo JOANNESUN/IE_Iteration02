@@ -59,31 +59,43 @@
         <br>
         <hr>
          </div>
+         
+         <div class="container-02" class="col-md-3">
+         <form action="/edit_01" method="POST"> 
+          <button class="button button1" type="submit" id="btns01">edit info</button>
+        </form>
+        </div>
+        <br>
 
-        <user-card name='Wife Diana' avatar="<%= ImageName %>" id="card-color">
-          <div class="user-card__slot" slot="message">
-           <!-- this form submits data in file format,  enctype encripted for allowing file upload  -->
+
+        <user-card  avatar="<%= ImageName %>" id="card-color">
           <form action="/pictureUpload" method="POST" enctype="multipart/form-data"> 
-             <input type="file" name="picture01"/> 
-             <!-- name varialbe should pass to multer object obj.single('name varialbe') -->
+            <input type="file" name="picture01"/> 
             <input id="submit-button" type="submit"/>
           </form>
-          </div>
-          <div class="user-card__slot" slot="message">I love you</div>
-          <div class="user-card__slot" slot="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet asperiores itaque obcaecati repellendus.</div>
-
-          <div class="user-card__slot" slot="phone">405-886-266</div>
+          <div class="user-card__slot" slot="contact"> please add contact name </div>
+          <div class="user-card__slot" slot="message">Please add messages</div>
+           <!-- this form submits data in file format,  enctype encripted for allowing file upload  -->
+             <!-- name varialbe should pass to multer object obj.single('name varialbe') -->
+           
+          <!-- this link will go to app.post inside index.js -->
+        
+      
+          <div class="user-card__slot" slot="phone">please add phone number here</div>
          
         </user-card>
    
-        <user-card name='Son David' avatar="son.png">
+        <user-card avatar="son.png">
           <div class="user-card__slot" slot="message">Dad Please call me</div>
-          <div class="user-card__slot" slot="phone">555-555-55555</div>
+          <div class="user-card__slot" slot="phone">0452-249-453</div>
+         
+          </div>
         </user-card>
         
         <user-card name='Daughter Tiffany' avatar="daughter.png">
           <div class="user-card__slot" slot="message">Dad Call me anytime</div>
-          <div class="user-card__slot" slot="phone">555-710-1300</div>
+          <div class="user-card__slot" slot="phone">0435-504-906</div>
+          
         </user-card>
       </div>
     </main>

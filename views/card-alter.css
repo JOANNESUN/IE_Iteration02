@@ -3,6 +3,7 @@
 
 .container:hover{
   color: rgb(8, 111, 129);
+  text-align: center;
    
 }
 
@@ -38,4 +39,20 @@ h1{
     background-color: darksalmon;
   } */
   
-  
+  #btns01{
+    
+    box-shadow:inset 1px 1px 0px 0px #bbdaf7;
+    background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+    background-color:#79bbff;
+    border-radius:6px;
+    border:9px solid #84bbf3;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:22px;
+    font-weight:bold;
+    padding:6px 43px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #528ecc;
+  }
